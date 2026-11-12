@@ -1,0 +1,7 @@
+sources/
+/cache/
+portable_config/watch_later/
+portable_config/cache/
+portable_config/saved-props.json
+tests/*.log
+/cache/
