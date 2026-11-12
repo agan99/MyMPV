@@ -31,29 +31,3 @@ uosc 菜单提供播放列表切换与移除、本地文件浏览、音量调节
 ## 文档语言规范
 
 项目说明、开发文档、测试报告及面向用户的功能说明默认使用简体中文。代码标识符、配置语法、命令、路径、第三方原文及许可证原文保持原样。
-# MyMPV V0.1
-
-Windows mpv configuration for faithful playback, subtitles, and optional scaling. Uses the existing `D:\_Software\Video\MPV-V3 20261106\mpv.exe`; it does not install or modify mpv.
-
-## Start
-
-```powershell
-& 'D:\_Software\Video\MPV-V3 20261106\mpv.exe' --config-dir='D:\_Software\Video\MyMPV\portable_config' 'D:\path\to\video.mkv'
-```
-
-The configuration is intentionally separate from the player directory. `thumb_engine` also points to this mpv executable in `portable_config/script-opts/thumb_engine.conf`; update that path if the build is moved.
-
-## Controls
-
-| Key | Action |
-| --- | --- |
-| Ctrl+1 / Ctrl+2 / Ctrl+3 | Original / Cinema / Anime |
-| p / b | Playlist / local file browser |
-| Alt+s | Subtitle track menu, including secondary track |
-| Alt+Shift+s | Cycle secondary subtitle track |
-| i / Shift+i | Temporary / persistent statistics |
-| Q | Quit and save file position |
-
-The uosc menu provides playlist switching and removal, file browsing, volume, and track selection. Dragging a local file onto mpv also opens it. A new file starts in Original mode. Cinema and Anime are manual choices; neither is enabled by default. mpv watch-later stores position and selected tracks for each file; `saved-props.json` stores volume and mute globally.
-
-See [architecture](docs/ARCHITECTURE.md), [feature status](docs/FEATURES.md), [dependencies](docs/DEPENDENCIES.md), and [testing](docs/TESTING.md).

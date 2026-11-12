@@ -1,3 +1,3 @@
-# Third-party changes
+# 第三方代码变更记录
 
-V0.1 copies selected PlayKit files without modifying their contents. MyMPV configuration and `quality_mode.lua` are new files under `portable_config`. If third-party files are changed later, record upstream source, commit, and reason here.
+V0.1 从 PlayKit 中选取并复制了部分文件，复制时未修改这些第三方文件的内容。MyMPV 的运行配置和 `quality_mode.lua` 是在 `portable_config` 下新增的项目内容。今后如需修改第三方代码，应在此记录上游来源、提交版本及修改原因。
